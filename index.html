@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Леся Українка — Видатна людина</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+    background:
+    linear-gradient(rgba(15,23,42,0.7),rgba(15,23,42,0.8)),
+    url('https://upload.wikimedia.org/wikipedia/commons/7/71/Lesya_Ukrainka_-_1900.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero{
+    max-width:800px;
+    animation:fade 1.5s ease;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.6;
+    color:#dbeafe;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#0ea5e9;
+}
+
+section{
+    width:85%;
+    max-width:1100px;
+    margin:auto;
+    padding:90px 0;
+}
+
+.card{
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:40px;
+    margin-top:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#7dd3fc;
+}
+
+ul{
+    margin-left:25px;
+    line-height:2;
+}
+
+.quote{
+    font-size:28px;
+    text-align:center;
+    font-style:italic;
+    color:#bae6fd;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+.author{
+    margin-top:10px;
+    color:white;
+    font-weight:600;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Леся Українка</h1>
+        <p>
+            Видатна українська письменниця, поетеса та символ сили української культури.
+            Її творчість надихає людей навіть через багато років.
+        </p>
+
+        <a href="#about" class="btn">Дізнатися більше</a>
+    </div>
+</header>
+
+<section id="about">
+    <div class="card">
+        <h2>Про Лесю Українку</h2>
+
+        <p style="line-height:2; font-size:18px;">
+            Леся Українка народилася 25 лютого 1871 року.
+            Вона стала однією з найвідоміших письменниць України.
+            Незважаючи на важку хворобу, вона продовжувала писати твори,
+            які стали важливою частиною української літератури.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Цікаві факти</h2>
+
+        <ul>
+            <li>Справжнє ім’я — Лариса Косач.</li>
+            <li>Знала понад 10 мов.</li>
+            <li>Писала вірші, драми та переклади.</li>
+            <li>Її твори вивчають у школах по всій Україні.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Відомий вислів</h2>
+
+        <div class="quote">
+            «Щоб не плакать, я сміялась»
+        </div>
+    </div>
+</section>
+
+<footer>
+    Навчальний односторінковий сайт • 2026
+    <div class="author">
+        Робота Агреніна Андрія
+    </div>
+</footer>
+
+</body>
+</html>
